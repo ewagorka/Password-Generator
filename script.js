@@ -145,7 +145,38 @@ console.log(getRandom(upperCasedCharacters));
 
 // Function to generate password with user input
 function generatePassword() {
+  // receive user password choices
+  var options = getPasswordOptions();
+  //initialise array to add random values that will become the password
+  var password = [];
 
+  //keep adding characters to the password until it reaches the length of user's choice
+  while (password.length < options.length) {
+
+    //add a numeric character if user chose to have it
+    if (options.numericCharacters) {
+      password.push(getRandom(numericCharacters));
+    }
+
+    //add a special character if user chose to have it
+    if (options.specialCharacters) {
+      password.push(getRandom(specialCharacters));
+    }
+
+    //add a lower case character if user chose to have it
+    if (options.lowerCaseCharacters) {
+      password.push(getRandom(lowerCasedCharacters));
+    }
+
+    //add an upper case character if user chose to have it
+    if (options.upperCasedCharacters) {
+      password.push(getRandom(upperCasedCharacters));
+    }
+  }
+
+  //turn the password array into a string
+  password = password.join("");
+  return password;
 }
 
 // Get references to the #generate element
