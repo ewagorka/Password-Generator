@@ -128,8 +128,6 @@ function getPasswordOptions() {
   return options;
 
 }
-//run function and print outcomes in the console
-getPasswordOptions();
 
 // Function for getting a random element from an array
 function getRandom(arr) {
@@ -138,10 +136,6 @@ function getRandom(arr) {
   character = arr[Math.floor(Math.random() * arr.length)];
   return character;
 }
-//run function with different arrays as parameters and print outcomes in the console
-console.log(getRandom(numericCharacters));
-console.log(getRandom(lowerCasedCharacters));
-console.log(getRandom(upperCasedCharacters));
 
 // Function to generate password with user input
 function generatePassword() {
