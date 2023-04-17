@@ -31,7 +31,7 @@ I started off by reading the instructions and studying the provided code.
 
 After that I've put a lot of console.log commands within the code to better understand how it works and how I can use the functions within each other. After that read the criteria again and started working on the first function - getPasswordOptions().
 
-Knowing that user will have to specify more than one condition for the desired password I decided that it will be best to make this function return an object that will hold user choices within it's attributes. I also considered using an array to keep the user's choices, but I chose to go with the object so I can give better suited names for each attribute. I used a prompt to ask the user for their preffered password lenght and put 
+Knowing that user will have to specify more than one condition for the desired password I decided that it will be best to make this function return an object that will hold user choices within it's attributes. I also considered using an array to keep the user's choices, but I chose to go with the object so I can give better suited names for each attribute. I used a prompt to ask the user for their preffered password lenght and put the value in a variable.
 
 
 
