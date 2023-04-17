@@ -43,7 +43,7 @@ The deployed website: https://ewagorka.github.io/Password-Generator/
 
 
 ## Deployed Website Screenshot
-![Deployed Website Screenshot](assets/images/deployedWebsite.png "Deployed Website Screenshot")
+![Deployed Website Screenshot](assets/css/images/deployedWebsite.png "Deployed Website Screenshot")
 
 ## License
 Please refer to the LICENSE in the repo.
