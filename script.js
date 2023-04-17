@@ -148,23 +148,35 @@ function generatePassword() {
   while (password.length < options.length) {
 
     //add a numeric character if user chose to have it
-    if (options.numericCharacters) {
+    //and check if the password length has not been achieved yet
+    if (options.numericCharacters && password.length < options.length) {
       password.push(getRandom(numericCharacters));
+    }else{
+      break;
     }
 
     //add a special character if user chose to have it
-    if (options.specialCharacters) {
+    //and check if the password length has not been achieved yet
+    if (options.specialCharacters && password.length < options.length) {
       password.push(getRandom(specialCharacters));
+    }else{
+      break;
     }
 
     //add a lower case character if user chose to have it
-    if (options.lowerCaseCharacters) {
+    //and check if the password length has not been achieved yet
+    if (options.lowerCaseCharacters && password.length < options.length) {
       password.push(getRandom(lowerCasedCharacters));
+    }else{
+      break;
     }
 
     //add an upper case character if user chose to have it
-    if (options.upperCasedCharacters) {
+    //and check if the password length has not been achieved yet
+    if (options.upperCasedCharacters && password.length < options.length) {
       password.push(getRandom(upperCasedCharacters));
+    }else{
+      break;
     }
   }
 
