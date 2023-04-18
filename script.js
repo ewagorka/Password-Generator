@@ -150,35 +150,43 @@ function generatePassword() {
   while (password.length < options.length) {
 
     //add a numeric character if user chose to have it
-    //and check if the password length has not been achieved yet
-    if (options.numericCharacters && password.length < options.length) {
+    if (options.numericCharacters) {
+      //break if the password has already reached its desired length
+      if(password.length===options.length){
+        break;
+      }else{
       password.push(getRandom(numericCharacters));
-    }else{
-      break;
+      }
     }
 
     //add a special character if user chose to have it
-    //and check if the password length has not been achieved yet
-    if (options.specialCharacters && password.length < options.length) {
+    if (options.specialCharacters) {
+      //break if the password has already reached its desired length
+      if(password.length===options.length){
+        break;
+      }else{
       password.push(getRandom(specialCharacters));
-    }else{
-      break;
+      }
     }
 
     //add a lower case character if user chose to have it
-    //and check if the password length has not been achieved yet
-    if (options.lowerCaseCharacters && password.length < options.length) {
+    if (options.lowerCaseCharacters) {
+      //break if the password has already reached its desired length
+      if(password.length===options.length){
+        break;
+      }else{
       password.push(getRandom(lowerCasedCharacters));
-    }else{
-      break;
+      }
     }
 
     //add an upper case character if user chose to have it
-    //and check if the password length has not been achieved yet
-    if (options.upperCasedCharacters && password.length < options.length) {
+    if (options.upperCasedCharacters) {
+      //break if the password has already reached its desired length
+      if(password.length===options.length){
+        break;
+      }else{
       password.push(getRandom(upperCasedCharacters));
-    }else{
-      break;
+      }
     }
   }
 
