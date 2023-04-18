@@ -123,8 +123,8 @@ function getPasswordOptions() {
     options.lowerCaseCharacters = confirm("Do you want lower case characters?");
     options.upperCasedCharacters = confirm("Do you want upper case characters?");
   }
-
-  console.log(options);
+  
+  // return options object with all user preferences set up
   return options;
 
 }
@@ -134,6 +134,8 @@ function getRandom(arr) {
   var character;
   // get a value from the array of a random index
   character = arr[Math.floor(Math.random() * arr.length)];
+
+  //return random character from given array
   return character;
 }
 
@@ -182,6 +184,8 @@ function generatePassword() {
 
   //turn the password array into a string
   password = password.join("");
+
+  //return the password, ready to be presented to user
   return password;
 }
 
