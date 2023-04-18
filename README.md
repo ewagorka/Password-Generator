@@ -2,6 +2,31 @@
 Week 5 challenge of the Front-End Development Bootcamp
 
 ## Project Description
+For the fourth week's challenge we were asked to write a password generator app. 
+
+We were given a starter code that consisted of a html, css and javascript file. The provided index.html file was fully styled and responsive and the javascript file had some preexisiting data and functions, that we were asked to work with. 
+
+Our task was to finish three existing functions (getPasswordOptions(), getRandom(arr), generatePassword()), to make the app fully functional.
+
+The requirements that we were given were:
+" The application application must:
+
+* Generate a password when the button is clicked.
+* Present a series of prompts for password criteria:
+  * Length of password:
+  * At least 8 characters but no more than 128.:
+  * Character types:
+  * Lowercase 
+  * Uppercase 
+  * Numeric 
+  * Special characters ($@%&*, etc.)
+* Code should validate for each input and at least one character type should be selected.
+* Once all prompts are answered, the password should be generated and displayed in an alert or written to the page
+* Given the user choices, a password should appear in the box above the button."
+
+
+
+## My Approach
 I started this challenge as usual by reading the instructions and studying the provided code.
 
 After studying the code, I went ahead and put a bunch of console.log commands in the Javascript file to help me understand how the functions work. Then after I got some basic understanding and ideas on how to solve this challenge, I read the criteria again and split the work into smaller pieces that I could handle.
@@ -26,15 +51,7 @@ Below I'll list the key outcomes I got from working on each function:
 * I practised using while loops (and breaking from them at certain points) and if statements
 * I learned how to turn an array into a single string by using the .join method
 
-In comparison to the previous challenges, this one proved to be considerably more challenging. However, it was also a lot of fun to work on, and it was very rewarding to see it work in the end.  
-
-
-## My Approach
-I started off by reading the instructions and studying the provided code.
-
-After that I've put a lot of console.log commands within the code to better understand how it works and how I can use the functions within each other. After that read the criteria again, divided it into more managable tasks and started to code.
-
-Each 
+In comparison to the previous challenges, this one proved to be considerably more challenging. However, it was also a lot of fun to work on, and it was very rewarding to see it work in the end. 
 
 
 
@@ -46,7 +63,7 @@ The deployed website: https://ewagorka.github.io/Password-Generator/
 
 
 ## Deployed Website Screenshot
-![Deployed Website Screenshot](assets/images/deployedWebsite.png "Deployed Website Screenshot")
+![Deployed Website Screenshot](assets/css/images/deployedWebsite.png "Deployed Website Screenshot")
 
 ## License
 Please refer to the LICENSE in the repo.
