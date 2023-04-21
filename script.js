@@ -192,8 +192,10 @@ function generatePassword() {
 
   //turn the password array into a string
   password = password.join("");
-  console.log(options.length);
-  console.log(password.length);
+
+  //Testing purposes - print length given by user and the generated password length
+  //console.log(options.length);
+  //console.log(password.length);
   //return the password, ready to be presented to user
   return password;
 
@@ -204,8 +206,8 @@ var generateBtn = document.querySelector('#generate');
 
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector('#password');
+var password = generatePassword();
+var passwordText = document.querySelector('#password');
 
   passwordText.value = password;
 }
